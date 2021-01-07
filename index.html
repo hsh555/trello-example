@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trello</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="./assets/images/icon.svg" type="image/svg" sizes="16x16">
+
+    <!-- css files -->
+    <link rel="stylesheet" href="assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- start header -->
+        <div class="header">
+            <!-- start top-header -->
+            <div class="top-header">
+                <div class="col-4">
+                    <button class="boards-btn btn">
+                        <img src="assets/images/trello-svg.svg">
+                        <span class="text">Boards</span>
+                    </button>
+                    <div class="search-box">
+                        <input type="text" class="btn">
+                        <span class="search-icon">
+                            <i class="fa fa-search fa-rotate-90" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="mobile-search-box">
+                        <span class="mobile-search-icon">
+                            <i class="fa fa-search fa-rotate-90" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="logo-box">
+                        <img src="assets/images/trello.svg" alt="trello logo">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="top-header-icons">
+                        <span class="icon-btn">
+                            <i class="fa fa-bell-o bell" aria-hidden="true"></i>
+                        </span>
+                        <span class="icon-btn">
+                            <i class="fa fa-exclamation-circle fa-rotate-180 circle" aria-hidden="true"></i>
+                        </span>
+                        <span class="icon-btn">
+                            <i class="fa fa-plus plus"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <!-- end top-header -->
+            <div class="clearfix"></div>
+            <!-- start bottom-header -->
+            <div class="bottom-header">
+                <div class="col-4 mobile-half">
+                    <button class="board-title btn">learn times</button>
+                    <button class="personal btn">Personal</button>
+                </div>
+                <div class="col-8 mobile-half">
+                    <button class="menu-btn btn">... show menu</button>
+                </div>
+            </div>
+            <!-- end bottom-header -->
+        </div>
+        <!-- end header -->
+
+        <!-- start content -->
+        <div class="content">
+
+        </div>
+        <!-- end content -->
+    </div>
+
+    <!-- start card-modal -->
+    <div id="card-modal">
+        <div class="card-modal-content">
+            <span id="modal-close"><i class="fa fa-close"></i></span>
+
+            <textarea name="edit" id="card-edit-input" placeholder="Enter new title..."></textarea>
+            <button id="card-edit-btn">Edit</button>
+
+            <span class="message-delete">Do you want to delete your card?</span>
+            <button id="card-delete-btn">Delete Card</button>
+        </div>
+    </div>
+    <!-- end card-modal -->
+
+    <!-- start mobile-modal-search -->
+    <div id="mobile-modal-search">
+        <div class="mobile-modal-search-content">
+            <span id="modal-close"><i class="fa fa-close"></i></span>
+            <div class="mobile-modal-search-box">
+                <input type="text" class="mobile-modal-search-input" placeholder="search here ...">
+                <span class="mobile-modal-search-icon">
+                    <i class="fa fa-search fa-rotate-90" aria-hidden="true"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- end mobile-modal-search -->
+
+    <!-- js files -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/helper.js"></script>
+    <script src="assets/js/elements.js"></script>
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
